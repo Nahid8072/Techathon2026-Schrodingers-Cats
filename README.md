@@ -1,6 +1,6 @@
 # Project Title
 
-Kernel Smart Office Monitoring Dashboard
+"Kernel" - Smart Office Monitoring Dashboard
 
 # Project Overview
 
