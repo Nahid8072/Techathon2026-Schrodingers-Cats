@@ -1,3 +1,313 @@
+# ⚡ Smart Office Monitoring System
+
+> A real-time Smart Office Monitoring System that enables office administrators to monitor electrical devices, visualize office energy usage, and detect unnecessary electricity consumption through an interactive web dashboard and a shared backend powering both the dashboard and a Discord bot.
+
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Frontend](https://img.shields.io/badge/Frontend-React%2019-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Vite](https://img.shields.io/badge/Vite-8.x-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 📖 Project Overview
+
+Electricity is often wasted in offices because lights and fans remain switched on after employees leave. This project provides a centralized monitoring solution that gives administrators a live overview of the office environment.
+
+The system visualizes every monitored electrical device, tracks total power consumption, highlights abnormal situations, and presents the entire office as an interactive digital twin.
+
+The project was developed as part of the **Techathon Preliminary Round**.
+
+---
+
+# ✨ Features
+
+## 🏢 Interactive Office Floor Map
+
+- Live top-view office layout
+- Three monitored office rooms
+- Interactive lights
+- Animated ceiling fans
+- Visual room status
+- Hoverable devices with information
+
+---
+
+## ⚡ Real-Time Monitoring
+
+- Live device status
+- Active device count
+- Total office power consumption
+- Room-wise power consumption
+- Office activity overview
+
+---
+
+## 🚨 Smart Alert System
+
+Displays alerts for situations such as:
+
+- Devices running outside office hours
+- Rooms with prolonged continuous operation
+- High power consumption
+
+---
+
+## 📊 Analytics Dashboard
+
+- Live KPI cards
+- Power gauge
+- Room statistics
+- Energy charts
+- Office hour information
+
+---
+
+## 🎨 Modern User Experience
+
+- Responsive layout
+- Smooth animations
+- Premium dashboard interface
+- Clean enterprise design
+- Interactive visualizations
+
+---
+
+# 🏢 Office Layout
+
+The monitored office consists of:
+
+- Drawing Room
+- Work Room 1
+- Work Room 2
+
+Each room contains:
+
+- 2 Fans
+- 3 Lights
+
+Total monitored devices:
+
+**15 Electrical Devices**
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- TypeScript
+- TanStack Start
+- TanStack Router
+- Vite
+
+## UI
+
+- Tailwind CSS
+- Radix UI
+- Lucide Icons
+- Recharts
+
+## Development
+
+- ESLint
+- Prettier
+
+---
+
+# 📁 Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── kernel/
+│   └── ui/
+│
+├── contexts/
+├── hooks/
+├── lib/
+├── routes/
+├── services/
+├── simulation/
+├── types/
+└── utils/
+```
+
+---
+
+# ⚙️ Getting Started
+
+## Prerequisites
+
+- Node.js 20+
+- npm / bun
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+
+cd your-repository
+
+npm install
+```
+
+or
+
+```bash
+bun install
+```
+
+---
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+or
+
+```bash
+bun run dev
+```
+
+---
+
+## Production Build
+
+```bash
+npm run build
+```
+
+---
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+# 📡 System Architecture
+
+```
+Simulated Device Layer
+          │
+          ▼
+     Shared Backend API
+      ├──────────────┐
+      ▼              ▼
+Web Dashboard   Discord Bot
+```
+
+Both the web dashboard and Discord bot are designed to consume the same backend data source, ensuring a single source of truth for all monitored devices.
+
+---
+
+# 📈 Dashboard Modules
+
+- Interactive Floor Map
+- KPI Cards
+- Device Status
+- Alerts Panel
+- Power Gauge
+- Energy Charts
+- Office Hours Card
+- Room Status Cards
+
+---
+
+# 🔄 Simulated Data
+
+Each monitored device contains:
+
+- Device ID
+- Room
+- Device Name
+- Device Type
+- Current Status
+- Power Draw
+- Runtime
+- Last Updated Timestamp
+
+The frontend currently visualizes simulated live data that can later be replaced with a shared backend API without significant UI changes.
+
+---
+
+# 📷 Screenshots
+
+## Dashboard
+
+> Add screenshot here
+
+```
+docs/screenshots/dashboard.png
+```
+
+---
+
+## Interactive Floor Map
+
+> Add screenshot here
+
+```
+docs/screenshots/floor-map.png
+```
+
+---
+
+## Alerts
+
+> Add screenshot here
+
+```
+docs/screenshots/alerts.png
+```
+
+---
+
+# 🚀 Future Improvements
+
+- Backend integration
+- Discord Bot integration
+- WebSocket support
+- User authentication
+- Historical analytics
+- Energy prediction
+- Device control
+- Mobile application
+
+---
+
+# 👥 Team
+
+| Name | Role |
+|------|------|
+| Your Name | Frontend Dashboard |
+| Member 2 | Backend |
+| Member 3 | Discord Bot |
+
+---
+
+# 📄 License
+
+This project is released under the MIT License.
+
+---
+
+# 🙏 Acknowledgements
+
+Developed as part of the Techathon Smart Office Monitoring Challenge.
+
+Special thanks to the organizers for providing an engaging engineering problem focused on real-time systems, user experience, and software architecture.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
