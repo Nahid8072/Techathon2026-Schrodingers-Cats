@@ -4,7 +4,7 @@
 
 # Project Overview
 
-Kernel is a frontend-focused smart office monitoring application built with React, TanStack Start, and TypeScript.
+Kernel is a full stack smart office monitoring application built with React, TanStack Start, type script and postgre .
 It provides a live digital twin style dashboard for office rooms and devices, including simulated power usage,
 alerts, analytics, reporting export, and workspace settings.
 
