@@ -149,5 +149,5 @@ UPDATE office.app_settings SET office_open='08:30', office_close='18:00', update
 
 The full stack was deployed and exercised end-to-end on PostgreSQL 16.14 / Node 18 before delivery: schema and seed apply cleanly under `ON_ERROR_STOP`; simulation ticks toggle devices and record power samples; Rule A raised 6 after-hours alerts at 23:58 local time; Rule B raised and then auto-resolved when a device in a fully-ON room (backdated 3 h) was switched off; all 7 REST endpoints returned correct JSON; and a Socket.IO client received 7 `device_changed`, 7 `alert_changed`, and 3 `power_sample` events over a 12-second window with zero polling.
 
-
+## 9. System Diagram
 ![System Diagram](public/System_Diagram.jpg)
