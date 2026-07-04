@@ -38,7 +38,7 @@ def _room_summary_text(room_name, devices):
 
 @bot.event
 async def on_ready():
-    print(f"✅ Logged in as {bot.user}")
+    print(f"[OK] Logged in as {bot.user}")
     start_simulation()
     if not alert_checker.is_running():
         alert_checker.start()

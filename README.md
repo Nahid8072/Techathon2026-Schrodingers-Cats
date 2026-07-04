@@ -187,3 +187,13 @@ To integrate the shared backend once it's ready:
 - No physical hardware was built or used — per the problem statement, simulated data is sufficient.
 - The Discord bot currently runs against a local, in-process simulator rather than a shared backend, since the backend was not ready during development. Data shown by the bot is not yet guaranteed to match the web dashboard until both are wired to the same backend.
 - The Gemini-based environment report (`ai.py`) is a bonus/extension feature beyond the core spec requirements (light/fan on-off + power monitoring).
+
+
+Discord server link- https://discord.gg/qs4mG6FBB
+
+commands :
+!statusসব ৩টা room-এর সংক্ষিপ্ত অবস্থা দেখায় — কয়টা fan/light ON আছে প্রতি room-এ
+
+!room <name>নির্দিষ্ট room-এর প্রতিটা device আলাদাভাবে দেখায় (status + wattage সহ)। <name> হতে পারে drawing, work1, বা work2
+
+!usageএই মুহূর্তে মোট কত Watt draw হচ্ছে + আজকের estimated kWh usage দেখায়
