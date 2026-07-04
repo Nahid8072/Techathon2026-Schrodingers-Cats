@@ -203,11 +203,9 @@ Additional pages:
 
 # Team Members
 
-No team member information is currently defined in this repository.
-
-Suggested format to add:
-- Name - Role
-- Name - Role
+Fardin Hasan Siam (Fron-End)
+Md Nahid Hasan Ratul (Backend)
+Samiun Alim Khan (Discord BOT)
 
 # Screenshots (placeholder)
 
