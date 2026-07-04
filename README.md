@@ -145,20 +145,7 @@ Optional (development mode build):
 npm run build:dev
 ```
 
-# Backend Integration
 
-Current status in this codebase:
-- No business backend API integration is implemented
-- No database integration is implemented
-- No external data fetch pipeline for dashboard metrics is implemented
-
-What exists server-side:
-- A TanStack Start server entry wrapper is present for SSR error handling
-- Error middleware and fallback HTML error response are implemented
-
-Integration point guidance:
-- Replace simulated state in the simulation hook/context with API-driven data sources
-- Keep route/component contracts and progressively migrate per page
 
 # Simulated Data
 
