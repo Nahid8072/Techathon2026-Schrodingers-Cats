@@ -130,7 +130,7 @@ Development server:
 npm run dev
 ```
 
-Production build:
+Production build: Run 
 ```bash
 npm run build
 ```
