@@ -12,7 +12,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:4000';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
 export default function useOfficeLive() {
   const [devices, setDevices] = useState([]);       // rows of v_device_live

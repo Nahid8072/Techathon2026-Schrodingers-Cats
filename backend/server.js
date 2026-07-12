@@ -120,6 +120,34 @@ app.post('/api/devices/:id/set', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// Get app settings
+app.get('/api/settings', async (_req, res) => {
+  try {
+    const { rows } = await pool.query('SELECT * FROM office.app_settings WHERE id = 1');
+    res.json(rows[0]);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Update app settings
+app.post('/api/settings', async (req, res) => {
+  const { office_timezone, office_open, office_close, continuous_on_limit } = req.body;
+  try {
+    const { rows } = await pool.query(
+      `INSERT INTO office.app_settings (id, office_timezone, office_open, office_close, continuous_on_limit, updated_at)
+       VALUES (1, $1, $2, $3, $4, now())
+       ON CONFLICT (id) DO UPDATE
+       SET office_timezone = EXCLUDED.office_timezone,
+           office_open = EXCLUDED.office_open,
+           office_close = EXCLUDED.office_close,
+           continuous_on_limit = EXCLUDED.continuous_on_limit,
+           updated_at = now()
+       RETURNING *`,
+      [office_timezone, office_open, office_close, continuous_on_limit]
+    );
+    res.json(rows[0]);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 app.get('/api/health', (_req, res) => res.json({ ok: true, ts: new Date() }));
 
 /* --------------- Postgres LISTEN/NOTIFY → Socket.IO bridge --------------- */
